@@ -6,12 +6,13 @@ from pathlib import Path, PureWindowsPath
 import smbclient
 
 # ===== CONFIG =====
+# Fill these in on each Pi's copy only -- never commit real credentials.
 SERVER     = "LOCAL-CLOUD-NAME-HERE.local"
 SHARE      = "Raspberry Pi"
 REMOTE_DIR = "PI_DEVICE_NAME"
 ENTRYPOINT = "SCRIPT-TO-RUN.py"
-USERNAME   = "pi"
-PASSWORD   = "RaspberryPi"
+USERNAME   = "SMB-USERNAME-HERE"
+PASSWORD   = "SMB-PASSWORD-HERE"
 
 WAIT_TOTAL_SECS = 60   # total time to wait for network/SMB
 WAIT_STEP_SECS  = 3    # delay between retries
