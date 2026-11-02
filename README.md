@@ -34,7 +34,7 @@ A single repo for my Raspberry Pi–powered Halloween props. Each device has its
   - **Right channel** is soldered to the handset speaker for voice effects.
 
 - Implements call/handset logic, cooldowns, and one-off stings.
-  For example: during a cooldown, if the handset is picked up and set down again, cooldown pauses and a right-channel whisper clip can play, then cooldown resumes only after the handset is set down.
+  For example: picking up the handset when the phone isn't ringing plays a jump scare in the handset, and hanging up restarts the full cooldown.
 - When the handset is picked up while ringing, sends a socket message over the network to Morpheus to trigger the skeleton animation.
 
 ### Cypher — Wiper Motor *(work in progress)*
